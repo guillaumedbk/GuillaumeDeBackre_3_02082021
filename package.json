@@ -1,0 +1,19 @@
+{
+  "name": "guillaumedebackre_3_02082021",
+  "version": "1.0.0",
+  "description": "projet 3",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css --style nested"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guillaumedbk/GuillaumeDeBackre_3_02082021.git"
+  },
+  "author": "guillaume",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guillaumedbk/GuillaumeDeBackre_3_02082021/issues"
+  },
+  "homepage": "https://github.com/guillaumedbk/GuillaumeDeBackre_3_02082021#readme"
+}
