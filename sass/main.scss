@@ -1,0 +1,86 @@
+/*Variables*/
+$fond_header_ville:#EAEAEA;
+$fond_header_exploration:#F6F6F6;
+$couleur_primaire:#9356DC;
+$couleur_secondaire:#FF79DA;
+$couleur_tertiaire:#99E2D0;
+$police_texte:'Roboto', sans-serif;
+
+/*Mixins*/
+@mixin typo-titres($taille){
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: $taille;
+    }
+
+@media (max-width: 600px) {
+    h1, h2{
+        @include typo-titres(5em);
+    }
+    h3{
+        @include typo-titres(5em);
+    }
+    p{
+        font-family: $police_texte;
+        font-size: 3em;
+    }
+    /*Adaptation des éléments*/
+    body{
+        width:80em;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+  
+    #logo{
+        width: 44em;
+        margin-top: 3em;
+    }
+    .position-flex{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .icons{
+        font-size: 4em;
+        padding: 0.5em;
+    }
+    #lieu{
+        background-color: $fond_header_ville;
+        width: 100%;
+    }
+    form input{
+        height: 5em;
+        width: auto;
+        background-color: $fond_header_ville;
+        border: 0px;
+    }
+    #ville{
+        @include typo-titres(3em);
+    }
+    h1{
+        width:80%;
+        text-align: center;
+        margin-bottom: 0em;
+    }
+    #texte_header{
+        width: 90%;
+        text-align: center;
+        margin: 0em;
+    }
+    button{
+        width:14em;
+        height: 3em;
+        border-radius: 60px;
+        background-color: $couleur_primaire;
+        font-size: 2.5em;
+        color: white;
+    }
+    #exploration{
+        background-color: $fond_header_exploration;
+        height: 50em;
+    }
+  }

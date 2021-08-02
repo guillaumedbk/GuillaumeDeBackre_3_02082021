@@ -1,1 +1,95 @@
+@charset "UTF-8";
+/*Variables*/
+/*Mixins*/
+@media (max-width: 600px) {
+  h1, h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 5em;
+  }
+
+  h3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 5em;
+  }
+
+  p {
+    font-family: "Roboto", sans-serif;
+    font-size: 3em;
+  }
+
+  /*Adaptation des éléments*/
+  body {
+    width: 80em;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #logo {
+    width: 44em;
+    margin-top: 3em;
+  }
+
+  .position-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .icons {
+    font-size: 4em;
+    padding: 0.5em;
+  }
+
+  #lieu {
+    background-color: #EAEAEA;
+    width: 100%;
+  }
+
+  form input {
+    height: 5em;
+    width: auto;
+    background-color: #EAEAEA;
+    border: 0px;
+  }
+
+  #ville {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 3em;
+  }
+
+  h1 {
+    width: 80%;
+    text-align: center;
+    margin-bottom: 0em;
+  }
+
+  #texte_header {
+    width: 90%;
+    text-align: center;
+    margin: 0em;
+  }
+
+  button {
+    width: 14em;
+    height: 3em;
+    border-radius: 60px;
+    background-color: #9356DC;
+    font-size: 2.5em;
+    color: white;
+  }
+
+  #exploration {
+    background-color: #F6F6F6;
+    height: 50em;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

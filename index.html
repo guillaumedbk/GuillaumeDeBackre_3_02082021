@@ -5,17 +5,111 @@
         <meta charset="utf-8"/>
         <title>ohmyfood</title>
         <!-- Lier la page css-->
-        <link rel="stylesheet" href="main.scss" />
-       
+        <link rel="stylesheet" href="public/css/style.css"/>
         <!--Déclaration du viewport-->
         <meta name="viewport" content="width=device-width"/>
+         <!-- Pour les icons-->
+         <script src="https://kit.fontawesome.com/5df1daaa8f.js" crossorigin="anonymous"></script>
+         <!--Polices-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
 
     </head>
 
     <body>
         <header>
-            <img src="images\logo\ohmyfood@2x" alt="logo_ohmyfood"/>
+            <!--Logo ohmyfood-->
+            <img src="images/logo/ohmyfood@2x.svg" alt="ohmyfood@2x" id="logo"/>
+            
+            <div class="position-flex" id="lieu">
+                <i class="fas fa-map-marker-alt icons"></i>
+
+                <form method="post" action="">
+                    <!--Input permettant de rechercher la ville-->
+                    <input type="search" value="Paris, Belleville" name="ville" id="ville"/>
+                </form>
+            </div>
+
+            <section class="position-flex" id="exploration">
+                <h1>Réservez le menu qui vous convient</h1>
+                <p id="texte_header">Découvrez des restaurants d'exception, séléctionnés par nos soins</p>
+                <button>Explorer nos restaurants</button>
+            </section>
         </header>
+
+        <main>
+            <!--Section pour le descriptif de fonctionnement-->
+            <section>
+                <!--Première figure-->
+                <div>
+                    <h2>Fonctionnement</h2>
+
+                    <figure class="position-flex">
+                        <i class="fas fa-mobile-alt icons"></i>
+
+                        <figcaption>
+                            Choisissez un restaurant
+                        </figcaption>
+                    </figure>
+
+                    <p>1</p>
+                </div>
+                <!--Deuxième figure-->
+                <div>
+                    <figure class="position-flex">
+                        <i class="fas fa-list icons"></i>
+
+                        <figcaption>
+                            Composez votre menu
+                        </figcaption>
+                    </figure>
+
+                    <p>2</p>
+                </div>
+                <!--Troisième figure-->
+                <div>
+                    <figure class="position-flex">
+                        <i class="fas fa-store icons"></i>
+
+                        <figcaption>
+                            Dégustez au restaurant
+                        </figcaption>
+                    </figure>
+
+                    <p>3</p>
+                </div>
+            </section>
+
+            <!--Section Restaurants-->
+            <section>
+                <h2>Restaurants</h2>
+                
+                <!--Première figure-->
+                <figure>
+                    <p><img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût"/></p>
+
+                    <p>Nouveau</p>
+
+                    <figcaption>
+                        <h3>La palette du goût</h3>
+                        <p>Ménilmontant</p>
+                    </figcaption>
+                </figure>
+
+                 <!--Deuxième figure-->
+                 <figure>
+                    <p><img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="La note enchantée"/></p>
+
+                    <p>Nouveau</p>
+
+                    <figcaption>
+                        <h3>La note enchantée</h3>
+                        <p>Charonne</p>
+                    </figcaption>
+                </figure>
+            </section>
+        </main>
     </body>
 
 </html>
