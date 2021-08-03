@@ -1,17 +1,6 @@
-/*Variables*/
-$fond_header_ville:#EAEAEA;
-$fond_header_exploration:#F6F6F6;
-$couleur_primaire:#9356DC;
-$couleur_secondaire:#FF79DA;
-$couleur_tertiaire:#99E2D0;
-$police_texte:'Roboto', sans-serif;
-
-/*Mixins*/
-@mixin typo-titres($taille){
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    font-size: $taille;
-    }
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./Components/selecteurs";
 
 @media (max-width: 600px) {
     h1, h2{
@@ -28,29 +17,28 @@ $police_texte:'Roboto', sans-serif;
     body{
         width:80em;
     }
-    header{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        }
-  
+    #section_fonctionnement{
+        margin: 3em;
+    }
+
     #logo{
-        width: 44em;
+        width: 37em;
         margin-top: 3em;
     }
-    .position-flex{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
     .icons{
-        font-size: 4em;
+        font-size: 3.5em;
         padding: 0.5em;
+        opacity: 50%;
+        margin-left: 0.5em;
     }
     #lieu{
         background-color: $fond_header_ville;
         width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    form{
+        width: 33em;
     }
     form input{
         height: 5em;
@@ -71,16 +59,27 @@ $police_texte:'Roboto', sans-serif;
         text-align: center;
         margin: 0em;
     }
-    button{
-        width:14em;
-        height: 3em;
-        border-radius: 60px;
-        background-color: $couleur_primaire;
-        font-size: 2.5em;
-        color: white;
-    }
     #exploration{
-        background-color: $fond_header_exploration;
-        height: 50em;
+        height: 53em;
+        display: flex;
+        align-items: flex-start;
     }
+    #box_exploration{
+        margin-top: 3em;
+        height: 40em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+    figcaption{
+        @include typo-titres (2.5em);
+    }
+    .bulle_chiffre:nth-child(1){
+        margin-left: -50px;
+    }
+    figcaption{
+        margin-left: 1em;
+    }
+
   }

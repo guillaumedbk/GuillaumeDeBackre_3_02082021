@@ -11,14 +11,14 @@
          <!-- Pour les icons-->
          <script src="https://kit.fontawesome.com/5df1daaa8f.js" crossorigin="anonymous"></script>
          <!--Polices-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
 
     </head>
 
     <body>
-        <header>
+        <header class="position-flex">
             <!--Logo ohmyfood-->
             <img src="images/logo/ohmyfood@2x.svg" alt="ohmyfood@2x" id="logo"/>
             
@@ -31,63 +31,62 @@
                 </form>
             </div>
 
-            <section class="position-flex" id="exploration">
-                <h1>Réservez le menu qui vous convient</h1>
-                <p id="texte_header">Découvrez des restaurants d'exception, séléctionnés par nos soins</p>
-                <button>Explorer nos restaurants</button>
+            <section class="fond_gris position-flex" id="exploration">
+                <div id="box_exploration">
+                    <h1>Réservez le menu qui vous convient</h1>
+                    <p id="texte_header">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+                    <button class="boutton">Explorer nos restaurants</button>
+                </div>
             </section>
         </header>
 
         <main>
             <!--Section pour le descriptif de fonctionnement-->
-            <section>
+            <section id="section_fonctionnement">
+                <h2>Fonctionnement</h2>
                 <!--Première figure-->
-                <div>
-                    <h2>Fonctionnement</h2>
-
-                    <figure class="position-flex">
+                    <div>
+                    <figure class="bulle">
+                        <p class="bulle_chiffre position-flex">1</p>
                         <i class="fas fa-mobile-alt icons"></i>
 
-                        <figcaption>
+                        <figcaption id="figcaption">
                             Choisissez un restaurant
                         </figcaption>
                     </figure>
 
-                    <p>1</p>
                 </div>
                 <!--Deuxième figure-->
                 <div>
-                    <figure class="position-flex">
+                    <figure class="bulle">
+                        <p class="bulle_chiffre position-flex">2</p>
                         <i class="fas fa-list icons"></i>
 
                         <figcaption>
                             Composez votre menu
                         </figcaption>
                     </figure>
-
-                    <p>2</p>
                 </div>
                 <!--Troisième figure-->
                 <div>
-                    <figure class="position-flex">
+                    <figure class="bulle">
+                        <p class="bulle_chiffre position-flex">3</p>
                         <i class="fas fa-store icons"></i>
 
                         <figcaption>
                             Dégustez au restaurant
                         </figcaption>
                     </figure>
-
-                    <p>3</p>
                 </div>
             </section>
 
             <!--Section Restaurants-->
-            <section>
+            <section class="fond_gris">
                 <h2>Restaurants</h2>
                 
                 <!--Première figure-->
                 <figure>
-                    <p><img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût"/></p>
+                    <p><img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût" class="images_figures"/></p>
 
                     <p>Nouveau</p>
 

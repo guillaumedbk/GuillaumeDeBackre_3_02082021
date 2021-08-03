@@ -1,0 +1,57 @@
+/*Sélecteurs*/
+.boutton{
+    width:14em;
+    height: 3em;
+    border-radius: 60px;
+    border: none;
+    background: linear-gradient(to right bottom, $couleur_secondaire, $couleur_primaire);
+    font-size: 2.5em;
+    color: white;
+    box-shadow: 5px 5px 15px grey;
+
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 400ms;
+        &:hover {
+            background-color: $couleur_secondaire;
+            transform: scale(1.15);
+            opacity: 80%;
+            box-shadow: 10px 10px 30px grey;
+        }
+}
+.position-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.bulle_chiffre{
+    background-color: $couleur_primaire;
+    border-radius: 100%;
+    width:2em;
+    height: 2em;
+    color:white;
+}
+.bulle{
+    background-color: $fond_gris;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 3em;
+    box-shadow: 5px 5px 30px rgb(184, 183, 183);
+    &:hover{
+        background-color: rgba(147, 86, 220, 0.15);
+        .icons{
+            color: $couleur_primaire;
+            opacity: 100%;
+        }
+    }
+}
+.fond_gris{
+    background-color: $fond_gris;
+}
+.images_figures{
+    width:25em;
+    border-radius: 40px 40px 0px 0px;
+}
