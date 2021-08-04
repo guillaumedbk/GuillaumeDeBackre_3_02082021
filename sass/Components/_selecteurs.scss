@@ -1,3 +1,15 @@
+/*Mixins*/
+@mixin typo-titres($taille){
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: $taille;
+    }
+
+@mixin typo-figure($weight){
+    font-family: 'Roboto', sans-serif;
+    font-weight: $weight;
+    font-size: 1.4em;
+}
 /*Sélecteurs*/
 .boutton{
     width:14em;
@@ -23,6 +35,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
+    &--flexstart{
+        justify-content: flex-start;
+    }
+}
+.position-flex-start{
+    display: flex;
+    justify-content: flex-start;
     flex-wrap: wrap;
 }
 
@@ -51,7 +71,20 @@
 .fond_gris{
     background-color: $fond_gris;
 }
+
+/*figure acceuil les restaurants*/
 .images_figures{
-    width:25em;
+    
+    width:70em;
+    height: 40em;
     border-radius: 40px 40px 0px 0px;
+    object-fit: cover;
+}
+.texte_figure{
+    @include typo-figure(lighter);
+    width: 80%;
+    margin-top: 0em;
+}
+.margin_bottom{
+    margin-bottom: 4em;
 }
