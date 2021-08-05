@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*Variables*/
-/*Mixins*/
+/*Variables*/
 /*Mixins*/
 /*Sélecteurs*/
 .boutton {
@@ -87,148 +87,262 @@
   margin-bottom: 4em;
 }
 
-@media (max-width: 600px) {
-  h1, h2 {
-    font-family: "Roboto", sans-serif;
-    font-weight: bold;
-    font-size: 5em;
-  }
+.padding_right {
+  padding-right: 0.7em;
+}
 
-  h3 {
-    font-family: "Roboto", sans-serif;
-    font-weight: bold;
-    font-size: 1.5em;
-    margin-bottom: 0.5em;
-  }
+.padding_bottom {
+  padding-bottom: 0.5em;
+}
 
-  p {
-    font-family: "Roboto", sans-serif;
-    font-weight: light;
-    font-size: 3em;
-  }
+/*footer*/
+.logo_footer {
+  filter: invert(93%) sepia(0%) saturate(7465%) hue-rotate(282deg) brightness(106%) contrast(103%);
+  padding-left: 1em;
+  padding-top: 0.5em;
+  height: 1.1em;
+}
 
-  /*Adaptation des éléments*/
-  body {
-    width: 80em;
-  }
+/*Les menus*/
+.image_fond {
+  width: 100%;
+}
 
-  #section_fonctionnement {
-    margin: 3em;
-  }
+.titres_des_menus {
+  font-family: "Shrikhand", cursive;
+  display: flex;
+  justify-content: flex-start;
+}
 
-  #logo {
-    width: 37em;
-    margin-top: 3em;
-  }
+.sous_titres_menus {
+  font-family: "Roboto", sans-serif;
+  font-weight: lighter;
+  text-transform: uppercase;
+  font-size: 3em;
+  border-bottom: 5px #99E2D0 solid;
+  width: 2.2em;
+}
 
-  .icons {
-    font-size: 3.5em;
-    padding: 0.5em;
-    opacity: 50%;
-    margin-left: 0.5em;
-  }
+.coeur_menu {
+  font-size: 4em;
+  position: relative;
+  top: -1.5em;
+  left: 20em;
+}
 
-  #lieu {
-    background-color: #EAEAEA;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
+.bulles_menu {
+  background-color: white;
+  border-radius: 30px;
+  padding-left: 1.5em;
+  padding-top: 1em;
+  width: 100%;
+}
 
-  form {
-    width: 33em;
-  }
+.titre_bulle_menu {
+  font-size: 3em;
+  margin-top: 0.5em;
+}
 
-  form input {
-    height: 5em;
-    width: auto;
-    background-color: #EAEAEA;
-    border: 0px;
-  }
+.texte_bulle_menu {
+  font-size: 2.5em;
+  font-weight: lighter;
+  margin-top: 0em;
+}
 
-  #ville {
-    font-family: "Roboto", sans-serif;
-    font-weight: bold;
-    font-size: 3em;
-  }
+.prix {
+  font-size: 2.5em;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 1.5em;
+  padding-bottom: 0.5em;
+}
 
-  h1 {
-    width: 80%;
-    text-align: center;
-    margin-bottom: 0em;
-  }
+.prix:nth-child(3) {
+  margin-top: -70px;
+}
 
-  #texte_header {
-    width: 90%;
-    text-align: center;
-    margin: 0em;
-  }
+h1, h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 5em;
+}
 
-  #exploration {
-    height: 53em;
-    display: flex;
-    align-items: flex-start;
-  }
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
 
-  #box_exploration {
-    margin-top: 3em;
-    height: 40em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-  }
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: light;
+  font-size: 3em;
+}
 
-  figcaption {
-    font-family: "Roboto", sans-serif;
-    font-weight: bold;
-    font-size: 2.5em;
-  }
+/*Adaptation des éléments*/
+#section_fonctionnement {
+  margin: 3em;
+}
 
-  .bulle_chiffre:nth-child(1) {
-    margin-left: -50px;
-  }
+#logo {
+  width: 37em;
+  margin-top: 3em;
+}
 
-  /*Figure*/
-  .figcaption_restaurants {
-    width: 90%;
-    border-radius: 0px 0px 40px 40px;
-    background-color: white;
-    padding-left: 1em;
-  }
+.icons {
+  font-size: 3.5em;
+  padding: 0.5em;
+  opacity: 50%;
+  margin-left: 0.5em;
+}
 
-  .coeur:nth-child(1) {
-    font-size: 2.5em;
-    display: flex;
-    justify-content: flex-end;
-    margin-top: -80px;
-  }
+#lieu {
+  background-color: #EAEAEA;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 
-  .etiquette:nth-child(1) {
-    font-family: "Roboto", sans-serif;
-    font-weight: bold;
-    font-size: 2.5em;
-    background-color: #99E2D0;
-    filter: brightness(115%);
-    border-radius: 10px;
-    width: 6em;
-    height: 2em;
-    text-align: center;
-    padding-top: 25px;
-    color: green;
-    margin-left: 20em;
-    margin-bottom: -4.3em;
-    z-index: 1;
-  }
+form {
+  width: 33em;
+}
 
-  #titre_restaurants {
-    margin-left: 0.7em;
-    padding-top: 1.3em;
-  }
+form input {
+  height: 5em;
+  width: auto;
+  background-color: #EAEAEA;
+  border: 0px;
+}
 
-  #section_restaurants {
-    margin-top: 15em;
-  }
+#ville {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 3em;
+}
+
+h1 {
+  width: 80%;
+  text-align: center;
+  margin-bottom: 0em;
+}
+
+#texte_header {
+  width: 90%;
+  text-align: center;
+  margin: 0em;
+}
+
+#exploration {
+  height: 53em;
+  display: flex;
+  align-items: flex-start;
+}
+
+#box_exploration {
+  margin-top: 3em;
+  height: 40em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+figcaption {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 2.5em;
+}
+
+.bulle_chiffre:nth-child(1) {
+  margin-left: -50px;
+}
+
+/*Figure*/
+.figcaption_restaurants {
+  width: 90%;
+  border-radius: 0px 0px 40px 40px;
+  background-color: white;
+  padding-left: 1em;
+}
+
+.coeur:nth-child(1) {
+  font-size: 2.5em;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -80px;
+}
+
+.etiquette:nth-child(1) {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 2.5em;
+  background-color: #99E2D0;
+  filter: brightness(115%);
+  border-radius: 10px;
+  width: 6em;
+  height: 2em;
+  text-align: center;
+  padding-top: 25px;
+  color: green;
+  margin-left: 20em;
+  margin-bottom: -4.3em;
+  z-index: 1;
+}
+
+#titre_restaurants {
+  margin-left: 0.7em;
+  padding-top: 1.3em;
+}
+
+#section_restaurants {
+  margin-top: 15em;
+  height: 270em;
+}
+
+/*Footer*/
+footer {
+  background-color: #353535;
+  height: 12em;
+  padding-left: 3em;
+  padding-top: 1em;
+  font-size: 2.5em;
+}
+footer ul {
+  list-style-type: none;
+}
+footer ul li {
+  color: white;
+}
+footer ul li a {
+  color: white;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: light 300;
+  font-size: 1em;
+}
+
+#le_menu {
+  width: 100%;
+  background-color: #F6F6F6;
+  padding-top: 1em;
+  margin-top: -50px;
+  padding-left: 4em;
+  padding-right: 4em;
+  border-radius: 70px 70px 0px 0px;
+}
+
+#image {
+  height: 50em;
+  width: 97em;
+  background-image: url("/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+  background-size: cover;
+}
+
+.icons_menu {
+  font-size: 3em;
+  position: relative;
+  right: 7em;
 }
 
 /*# sourceMappingURL=style.css.map */

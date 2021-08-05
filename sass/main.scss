@@ -2,7 +2,7 @@
 @import "./utils/mixins";
 @import "./Components/selecteurs";
 
-@media (max-width: 600px) {
+
     h1, h2{
         @include typo-titres(5em);
     }
@@ -16,9 +16,6 @@
         font-size: 3em;
     }
     /*Adaptation des éléments*/
-    body{
-        width:80em;
-    }
     #section_fonctionnement{
         margin: 3em;
     }
@@ -114,5 +111,46 @@
     }
     #section_restaurants{
         margin-top: 15em;
+        height:270em;
     }
-  }
+    /*Footer*/
+    footer{
+        background-color: #353535;
+        height: 12em;
+        padding-left: 3em;
+        padding-top: 1em;
+        font-size: 2.5em;
+        ul{
+            list-style-type: none;
+            li{
+                color: white;
+                a{
+                    color: white;
+                    text-decoration: none;
+                    @include typo-footer;
+                }
+            }
+        }
+    }
+    #le_menu{
+        width:100%;
+        background-color: $fond_gris;
+        padding-top: 1em;
+        margin-top: -50px;
+        padding-left: 4em;
+        padding-right: 4em;
+        border-radius: 70px 70px 0px 0px;
+    }
+    
+    #image{
+        height:50em;
+        width: 97em;
+        background-image: url("/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+        background-size: cover;
+    }
+    .icons_menu{
+        font-size: 3em;
+        position: relative;
+        right:7em;
+    }
+    
