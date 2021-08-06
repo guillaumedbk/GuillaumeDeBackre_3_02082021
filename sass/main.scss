@@ -16,6 +16,9 @@
         font-size: 3em;
     }
     /*Adaptation des éléments*/
+    body{
+        width:89em;
+    }
     #section_fonctionnement{
         margin: 3em;
     }
@@ -23,6 +26,7 @@
     #logo{
         width: 37em;
         margin-top: 3em;
+        margin-bottom: 3em;
     }
     .icons{
         font-size: 3.5em;
@@ -79,7 +83,7 @@
     }
     /*Figure*/
     .figcaption_restaurants{
-     width: 90%;
+     width: 93%;
      border-radius: 0px 0px 40px 40px;
      background-color: white;
      padding-left: 1em;
@@ -117,6 +121,7 @@
     footer{
         background-color: #353535;
         height: 12em;
+        width: 100%;
         padding-left: 3em;
         padding-top: 1em;
         font-size: 2.5em;
@@ -127,13 +132,14 @@
                 a{
                     color: white;
                     text-decoration: none;
-                    @include typo-footer;
+                    @include typo-footer(1em);
                 }
             }
         }
     }
     #le_menu{
         width:100%;
+        height: 210em;
         background-color: $fond_gris;
         padding-top: 1em;
         margin-top: -50px;
@@ -142,15 +148,25 @@
         border-radius: 70px 70px 0px 0px;
     }
     
-    #image{
-        height:50em;
-        width: 97em;
-        background-image: url("/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
-        background-size: cover;
+    #image_menu_un{
+        @include background-image("/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg")
+    }
+    #image_menu_deux{
+        @include background-image("/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg")
+    }
+    #image_menu_trois{
+        @include background-image("/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg")
+    }
+    #image_menu_quatre{
+        @include background-image("/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg")
     }
     .icons_menu{
         font-size: 3em;
         position: relative;
         right:7em;
     }
-    
+    a{
+        text-decoration: none;
+        color: black;
+    }
+   

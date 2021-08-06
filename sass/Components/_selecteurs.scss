@@ -20,12 +20,17 @@ $police_titre_menu:'Shrikhand', cursive;
     font-weight: $weight;
     font-size: 1.4em;
 }
-@mixin typo-footer{
+@mixin typo-footer ($taille){
     font-family: 'Roboto', sans-serif;
     font-weight: light 300;
-    font-size: 1em;
+    font-size: $taille;
 }
-
+@mixin background-image($url){
+    height:50em;
+    width: 97em;
+    background-image: url($url);
+    background-size: cover;
+}
 /*Sélecteurs*/
 .boutton{
     width:14em;
@@ -33,16 +38,13 @@ $police_titre_menu:'Shrikhand', cursive;
     border-radius: 60px;
     border: none;
     background: linear-gradient(to right bottom, $couleur_secondaire, $couleur_primaire);
-    font-size: 2.5em;
     color: white;
     box-shadow: 5px 5px 15px grey;
-
+    @include typo-footer(2.5em);
     cursor: pointer;
-    transform: scale(1);
     transition: transform 400ms;
         &:hover {
             background-color: $couleur_secondaire;
-            transform: scale(1.15);
             opacity: 80%;
             box-shadow: 10px 10px 30px grey;
         }
@@ -166,4 +168,9 @@ $police_titre_menu:'Shrikhand', cursive;
 }
 .prix:nth-child(3){
     margin-top:-70px;
+}
+.bouton_menus{
+    display: flex;
+    justify-content: center;
+    margin-top: 10em;
 }
