@@ -16,11 +16,12 @@
         font-size: 3em;
     }
     /*Adaptation des éléments*/
-    body{
-        width:89em;
+    header{
+        width:98em;
     }
     #section_fonctionnement{
         margin: 3em;
+        width: 93em;
     }
 
     #logo{
@@ -64,6 +65,7 @@
     }
     #exploration{
         height: 53em;
+        width: 100%;
         display: flex;
         align-items: flex-start;
     }
@@ -88,13 +90,36 @@
      background-color: white;
      padding-left: 1em;
     }
+    /*Coeur avec animation*/
+    .coeur_box{
+        .coeur_plein{
+            opacity: 0;
+        }
+        &:hover{
+            .coeur{
+                opacity: 0;
+                transition: .5s 0s ease;
+            }
+            .coeur_plein{
+                @include coeur;
+                font-weight: 900;
+                font-size: 2.3em;
+                display: flex;
+                justify-content: flex-end;
+                margin-top: -90px;
+                opacity: 1;
+            }
+        }
+    }
     .coeur:nth-child(1){
-        font-size: 2.5em;
+        
+        font-size: 2.3em;
         display: flex;
         justify-content: flex-end;
-        margin-top: -80px;
-        
+        margin-top: -70px;
+        font-weight: 0;
     }
+ 
     .etiquette:nth-child(1){
         @include typo-titres(2.5em);
         background-color: $couleur_tertiaire;
@@ -116,12 +141,13 @@
     #section_restaurants{
         margin-top: 15em;
         height:270em;
+        width:98em;
     }
     /*Footer*/
     footer{
         background-color: #353535;
         height: 12em;
-        width: 100%;
+        width: 36em;
         padding-left: 3em;
         padding-top: 1em;
         font-size: 2.5em;
@@ -138,7 +164,7 @@
         }
     }
     #le_menu{
-        width:100%;
+        width:89em;
         height: 210em;
         background-color: $fond_gris;
         padding-top: 1em;
@@ -163,7 +189,7 @@
     .icons_menu{
         font-size: 3em;
         position: relative;
-        right:7em;
+        right:8em;
     }
     a{
         text-decoration: none;

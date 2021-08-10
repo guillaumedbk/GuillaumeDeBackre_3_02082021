@@ -20,7 +20,7 @@
 .boutton:hover {
   background-color: #FF79DA;
   opacity: 80%;
-  box-shadow: 10px 10px 30px grey;
+  box-shadow: 10px 10px 30px black;
 }
 
 .position-flex {
@@ -69,7 +69,7 @@
 
 /*figure acceuil les restaurants*/
 .images_figures {
-  width: 70em;
+  width: 88em;
   height: 40em;
   border-radius: 40px 40px 0px 0px;
   object-fit: cover;
@@ -187,12 +187,13 @@ p {
 }
 
 /*Adaptation des éléments*/
-body {
-  width: 89em;
+header {
+  width: 98em;
 }
 
 #section_fonctionnement {
   margin: 3em;
+  width: 93em;
 }
 
 #logo {
@@ -246,6 +247,7 @@ h1 {
 
 #exploration {
   height: 53em;
+  width: 100%;
   display: flex;
   align-items: flex-start;
 }
@@ -277,11 +279,34 @@ figcaption {
   padding-left: 1em;
 }
 
-.coeur:nth-child(1) {
-  font-size: 2.5em;
+/*Coeur avec animation*/
+.coeur_box .coeur_plein {
+  opacity: 0;
+}
+.coeur_box:hover .coeur {
+  opacity: 0;
+  transition: 0.5s 0s ease;
+}
+.coeur_box:hover .coeur_plein {
+  background: linear-gradient(to right top, #FF79DA 0%, #9356DC 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+  font-size: 2.3em;
   display: flex;
   justify-content: flex-end;
-  margin-top: -80px;
+  margin-top: -90px;
+  opacity: 1;
+}
+
+.coeur:nth-child(1) {
+  font-size: 2.3em;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -70px;
+  font-weight: 0;
 }
 
 .etiquette:nth-child(1) {
@@ -309,13 +334,14 @@ figcaption {
 #section_restaurants {
   margin-top: 15em;
   height: 270em;
+  width: 98em;
 }
 
 /*Footer*/
 footer {
   background-color: #353535;
   height: 12em;
-  width: 100%;
+  width: 36em;
   padding-left: 3em;
   padding-top: 1em;
   font-size: 2.5em;
@@ -335,7 +361,7 @@ footer ul li a {
 }
 
 #le_menu {
-  width: 100%;
+  width: 89em;
   height: 210em;
   background-color: #F6F6F6;
   padding-top: 1em;
@@ -376,7 +402,7 @@ footer ul li a {
 .icons_menu {
   font-size: 3em;
   position: relative;
-  right: 7em;
+  right: 8em;
 }
 
 a {

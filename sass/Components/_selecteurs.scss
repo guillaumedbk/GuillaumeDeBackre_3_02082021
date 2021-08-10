@@ -8,6 +8,9 @@ $couleur_tertiaire:#99E2D0;
 
 $police_texte:'Roboto', sans-serif;
 $police_titre_menu:'Shrikhand', cursive;
+
+$coeur-début: rgba(1, 28, 55, 0);
+$coeur-fin: rgba(1, 28, 55, 1);
 /*Mixins*/
 @mixin typo-titres($taille){
     font-family: 'Roboto', sans-serif;
@@ -31,6 +34,14 @@ $police_titre_menu:'Shrikhand', cursive;
     background-image: url($url);
     background-size: cover;
 }
+@mixin coeur{
+  
+    background: linear-gradient(to right top, $couleur_secondaire 0%,$couleur_primaire 100%);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color:transparent;
+}
 /*Sélecteurs*/
 .boutton{
     width:14em;
@@ -46,7 +57,7 @@ $police_titre_menu:'Shrikhand', cursive;
         &:hover {
             background-color: $couleur_secondaire;
             opacity: 80%;
-            box-shadow: 10px 10px 30px grey;
+            box-shadow: 10px 10px 30px black;
         }
 }
 .position-flex{
@@ -92,8 +103,7 @@ $police_titre_menu:'Shrikhand', cursive;
 
 /*figure acceuil les restaurants*/
 .images_figures{
-    
-    width:70em;
+    width:88em;
     height: 40em;
     border-radius: 40px 40px 0px 0px;
     object-fit: cover;
