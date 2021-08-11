@@ -310,6 +310,9 @@ figcaption {
 }
 
 /*Menu*/
+.coeur_box_menu {
+  height: 0em;
+}
 .coeur_box_menu .coeur_plein_menu {
   opacity: 0;
 }
