@@ -516,6 +516,11 @@
     footer{
         width:93%;
     }
+    .les_menus{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 /*Ultra-width*/
 @media screen and (min-width : 2000px) and (max-width:2810px){
@@ -575,4 +580,75 @@
     footer{
         width:95%;
     }
+    .les_menus{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #image_menu_un{
+        width: 100%;
+    }
+
+    }
+    @media screen and (min-width : 2810px){
+        body{
+            margin-left: 20em;
+            margin-right: 20em;
+        }
+        header{
+            width:100%;
+        }
+        main{
+            width:100%;
+        }
+        h2{
+            width:100%;
+        }
+        #contenaire_bulles{
+            display: flex;
+            
+        }
+        .bulle{
+            width:35em;
+        }
+        #section_fonctionnement{
+            width:100%;
+        }
+        #section_restaurants{
+            width: 100%;
+        }
+        #contenaire_bulles{
+            width: 100%;
+        }
+        .restaurants_articles{
+            width: 52em;
+            margin-right: 0em;
+      }
+        .images_figures{
+            width: 46em;
+        }
+        .etiquette{
+            position: relative;
+            right:3em;
+        }
+        .contenaire_article{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        #section_restaurants{
+            height: 150em;
+        }
+        footer{
+            width:94%;
+        }
+        .les_menus{
+           
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        #image_menu_un, #image_menu_deux, #image_menu_trois, #image_menu_quatre{
+            width: 100%;
+        }
     }
