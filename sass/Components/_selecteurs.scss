@@ -35,8 +35,28 @@ $coeur-fin: rgba(1, 28, 55, 1);
     background-size: cover;
 }
 @mixin coeur{
-  
     background: linear-gradient(to right top, $couleur_secondaire 0%,$couleur_primaire 100%);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color:transparent;
+}
+@mixin coeur_debut{
+    background: linear-gradient(to top, $couleur_secondaire 30%, $couleur_primaire 10%, white 30%);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color:transparent;
+}
+@mixin coeur_milieu {
+    background: linear-gradient(to top, $couleur_secondaire 60%,white 30%);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color:transparent;
+}
+@mixin coeur_trois_quart {
+    background: linear-gradient(to top, $couleur_secondaire 80%,white 30%);
         -webkit-background-clip: text;
         -moz-background-clip: text;
         background-clip: text;

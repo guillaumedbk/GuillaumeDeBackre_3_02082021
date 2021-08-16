@@ -299,6 +299,7 @@ figcaption {
   justify-content: flex-end;
   margin-top: -90px;
   opacity: 1;
+  animation: slide_coeur 0.5s;
 }
 
 .coeur:nth-child(1) {
@@ -309,6 +310,39 @@ figcaption {
   font-weight: 0;
 }
 
+@keyframes slide_coeur {
+  15% {
+    background: linear-gradient(to top, #FF79DA 30%, #9356DC 10%, white 30%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0.5;
+  }
+  30% {
+    background: linear-gradient(to top, #FF79DA 60%, white 30%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0.5;
+  }
+  45% {
+    background: linear-gradient(to top, #FF79DA 80%, white 30%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0.5;
+  }
+  70% {
+    background: linear-gradient(to right top, #FF79DA 0%, #9356DC 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
 /*Menu*/
 .coeur_box_menu {
   height: 0em;
@@ -330,10 +364,11 @@ figcaption {
   font-size: 4em;
   display: flex;
   justify-content: flex-end;
-  margin-top: -161px;
+  margin-top: -155px;
   position: relative;
   right: 1.25em;
   opacity: 1;
+  animation: slide_coeur 0.5s;
 }
 
 .coeur_menu:nth-child(2) {
@@ -448,7 +483,6 @@ a {
 /*SPINNER LOADING*/
 .box_spinner {
   animation: spinner-appear 2s 0.2s;
-  z-index: -2;
   opacity: 0;
 }
 .box_spinner .spinner_1::before {
@@ -463,34 +497,14 @@ a {
   border-radius: 50%;
   border: 20px solid #9356DC;
   border-top-color: #FF79DA;
+  border-bottom-color: #99E2D0;
   animation: spinner 0.7s ease infinite;
-  opacity: 1;
-  z-index: -1;
   background-color: #f6f6f6;
-}
-.box_spinner .spinner_2::before {
-  content: "";
-  position: absolute;
-  top: 51.8%;
-  left: 52.5%;
-  width: 118px;
-  height: 118px;
-  margin-top: -30px;
-  margin-left: -30px;
-  border-radius: 50%;
-  border: 20px solid transparent;
-  border-top-color: #99E2D0;
-  animation: spinner_2 0.7s ease-in-out infinite;
 }
 
 @keyframes spinner {
   to {
     transform: rotate(360deg);
-  }
-}
-@keyframes spinner_2 {
-  to {
-    transform: rotate(-360deg);
   }
 }
 @keyframes spinner-appear {
@@ -836,8 +850,8 @@ a {
 }
 @media screen and (min-width: 2810px) {
   body {
-    margin-left: 20em;
-    margin-right: 20em;
+    margin-left: 50em;
+    margin-right: 50em;
   }
 
   header {
@@ -854,6 +868,7 @@ a {
 
   #contenaire_bulles {
     display: flex;
+    justify-content: space-around;
   }
 
   .bulle {
@@ -873,12 +888,12 @@ a {
   }
 
   .restaurants_articles {
-    width: 52em;
+    width: 80em;
     margin-right: 0em;
   }
 
   .images_figures {
-    width: 46em;
+    width: 72em;
   }
 
   .etiquette {
@@ -897,7 +912,7 @@ a {
   }
 
   footer {
-    width: 94%;
+    width: 96.7%;
   }
 
   .les_menus {

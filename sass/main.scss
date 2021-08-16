@@ -108,17 +108,35 @@
                 justify-content: flex-end;
                 margin-top: -90px;
                 opacity: 1;
+                animation: slide_coeur 0.5s;
             }
         }
     }
     .coeur:nth-child(1){
-        
         font-size: 2.3em;
         display: flex;
         justify-content: flex-end;
         margin-top: -70px;
         font-weight: 0;
     }
+
+    @keyframes slide_coeur {
+            15%{
+            @include coeur_debut;
+            opacity: 0.5;
+            }
+            30%{
+            @include coeur_milieu;
+            opacity: 0.5;
+            }
+            45%{
+            @include coeur_trois_quart;
+            opacity: 0.5;
+            }
+            70%{
+            @include coeur;
+            }
+      }
 /*Menu*/
     .coeur_box_menu{   
         height: 0em;
@@ -136,10 +154,11 @@
                 font-size: 4em;
                 display: flex;
                 justify-content: flex-end;
-                margin-top: -161px;
+                margin-top: -155px;
                 position: relative;
                 right:1.25em;
                 opacity: 1;
+                animation: slide_coeur 0.5s;
             }
         }
     }
@@ -229,12 +248,10 @@
    /*SPINNER LOADING*/
    .box_spinner{
     animation: spinner-appear 2s .2s;
-    z-index: -2;
     opacity: 0;
     .spinner_1{
         &::before{
             content:"";
-            
             position:absolute;
             top:50%; left:50%;
             width:200px;
@@ -244,29 +261,11 @@
             border-radius: 50%;
             border: 20px solid $couleur_primaire;
             border-top-color: $couleur_secondaire;
+            border-bottom-color:$couleur_tertiaire;
             animation: spinner 0.7s ease infinite;
-            opacity:1; 
-            z-index: -1;
             background-color: #f6f6f6;
         }
     }
- 
-    .spinner_2{
-     &::before{
-         content:"";
-         position:absolute;
-         top:51.8%; left:52.5%;
-         width:118px;
-         height:118px;
-         margin-top:-30px;
-         margin-left:-30px;
-         border-radius: 50%;
-         border: 20px solid transparent;
-         border-top-color: $couleur_tertiaire;
-         animation: spinner_2 0.7s ease-in-out infinite;
-     }
-   }
- 
 }
 
  
@@ -275,11 +274,7 @@
            transform: rotate(360deg);
        }
    }
-   @keyframes spinner_2{
-    to{
-        transform: rotate(-360deg);
-    }
-    }
+  
     @keyframes spinner-appear {
         0%{
         opacity: 1;
@@ -592,8 +587,8 @@
     }
     @media screen and (min-width : 2810px){
         body{
-            margin-left: 20em;
-            margin-right: 20em;
+            margin-left: 50em;
+            margin-right: 50em;
         }
         header{
             width:100%;
@@ -606,7 +601,7 @@
         }
         #contenaire_bulles{
             display: flex;
-            
+            justify-content: space-around;
         }
         .bulle{
             width:35em;
@@ -621,11 +616,11 @@
             width: 100%;
         }
         .restaurants_articles{
-            width: 52em;
+            width: 80em;
             margin-right: 0em;
       }
         .images_figures{
-            width: 46em;
+            width: 72em;
         }
         .etiquette{
             position: relative;
@@ -640,7 +635,7 @@
             height: 150em;
         }
         footer{
-            width:94%;
+            width:96.7%;
         }
         .les_menus{
            
