@@ -247,7 +247,6 @@
         color: black;
     }
    /*SPINNER LOADING*/
-   
    .box_spinner{
     animation: background-appear 2s .2s;
     opacity: 0;
@@ -440,15 +439,17 @@
 }
 /*desktop*/
 @media screen and (min-width : 1025px) and (max-width : 1700px){
+    .bulle{
+        width:70em;
+    }
     #contenaire_bulles{
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-around;
     }
     .bulle_chiffre{
         width: 3em;
-    }
-    .bulle{
-        width:27em;
+        height: 3em;
     }
     .restaurants_articles{
         width: 47em;
