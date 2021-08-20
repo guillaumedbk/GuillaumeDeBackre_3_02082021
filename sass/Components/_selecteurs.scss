@@ -25,6 +25,9 @@
     &--flexstart{
         justify-content: flex-start;
     }
+    &--center{
+        justify-items: center;
+    }
 }
 .position-flex-start{
     display: flex;
