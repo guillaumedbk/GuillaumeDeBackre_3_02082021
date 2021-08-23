@@ -16,13 +16,8 @@
         font-weight: light;
         font-size: 3em;
     }
-    /*Adaptation des éléments*/
-    header{
-        width:98em;
-    }
     #section_fonctionnement{
         margin: 3em;
-        width: 93em;
     }
 
     #logo{
@@ -63,6 +58,9 @@
         width: 90%;
         text-align: center;
         margin: 0em;
+        color: grey;
+        font-family: $police_texte;
+        font-weight: 300;
     }
     #exploration{
         height: 53em;
@@ -86,10 +84,12 @@
     }
     /*Figure*/
     .figcaption_restaurants{
-     width: 93%;
+     width: 100%;
      border-radius: 0px 0px 40px 40px;
      background-color: white;
      padding-left: 1em;
+
+    
     }
     /*Coeur avec animation*/
     .coeur_box{
@@ -170,35 +170,24 @@
         margin-top: -70px;
         font-weight: 0;
     }
- 
-    .etiquette:nth-child(1){
-        @include typo-titres(2.5em);
-        background-color: $couleur_tertiaire;
-        filter: brightness(115%);
-        border-radius: 10px;
-        width:6em;
-        height: 2em;
-        text-align: center;
-        padding-top: 25px;
-        color:green;
-        margin-left: 20em;
-        margin-bottom: -4.3em;
-        z-index: 1;
-    }
+
     #titre_restaurants{
         margin-left: 0.7em;
         padding-top: 1.3em;
+        width: 95%;
     }
     #section_restaurants{
         margin-top: 15em;
-        height:290em;
-        width:98em;
+        margin-left: 1em;
+       
     }
     /*Footer*/
     footer{
         background-color: #353535;
+        /*
         height: 12em;
         width: 36em;
+        */
         padding-left: 3em;
         padding-top: 1em;
         font-size: 2.5em;
@@ -215,8 +204,10 @@
         }
     }
     #le_menu{
+        /*
         width:89em;
         height: 210em;
+        */
         background-color: $fond_gris;
         padding-top: 1em;
         margin-top: -50px;
@@ -226,8 +217,10 @@
     }
 
     .image_fond_menus{
+        /*
         height:50em;
         width: 97em;
+        */
         object-fit: cover;
     }
     .image_menu{
@@ -258,7 +251,7 @@
         &::before{
             content:"";
             position:absolute;
-            top:50%; left:42%;
+            top:50%; left:50%;
             width:200px;
             height:200px;
             margin-top:-30px;
@@ -423,53 +416,53 @@
               transform: translateX(0);
             }
           }
-
-/*media queries*/
-@media screen and (max-width : 767px){
-
-}
-@media screen and (min-width : 768px) and (max-width : 1024px){
-    .bulle{
-        width:60em;
-    }
-    #contenaire_bulles{
+          
+#contenaire_bulles{
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
-    }
+        justify-content: center;
+        }
+
+.etiquette{
+        @include typo-titres(2.5em);
+        background-color: $couleur_tertiaire;
+        filter: brightness(115%);
+        border-radius: 10px;
+        width:6em;
+        height: 2em;
+        text-align: center;
+        color:green;
+        z-index: 2;
+        position: absolute;
+        top: 2em;
+        left: 75%;
+        padding-top: 0.5em;
+        }
+
+.restaurants_articles{
+        width: 100%;  
+        position:relative;
+      }
+
+
+/*media queries*/
+@media screen and (min-width : 768px) and (max-width : 1024px){
+    
+  
 }
 /*desktop*/
 @media screen and (min-width : 1025px) and (max-width : 1700px){
     .bulle{
         width:70em;
     }
-    #contenaire_bulles{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
     .bulle_chiffre{
         width: 3em;
         height: 3em;
-    }
-    .restaurants_articles{
-        width: 47em;
-        margin-right: 0em;
-  }
-    .images_figures{
-        width: 41em;
-    }
-    .etiquette{
-        position: relative;
-        right:5em;
     }
     .contenaire_article{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-    }
-    #section_restaurants{
-        height: 150em;
     }
     .coeur_box{
         position: relative;
@@ -488,10 +481,6 @@
     h2{
         width:100%;
     }
-    body{
-        margin-left: 6em;
-        margin-right: 6em;
-    }
     #section_fonctionnement{
         width:100%;
     }
@@ -505,30 +494,11 @@
         display: flex;
         justify-content: space-around;
     }
-    .bulle_chiffre{
-        width: 3em;
-    }
-    .bulle{
-        width:27em;
-    }
-    .restaurants_articles{
-        width: 47em;
-        margin-right: 0em;
-  }
-    .images_figures{
-        width: 41em;
-    }
-    .etiquette{
-        position: relative;
-        right:5em;
-    }
+ 
     .contenaire_article{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-    }
-    #section_restaurants{
-        height: 150em;
     }
     .coeur_box{
         position: relative;
@@ -572,41 +542,17 @@
     #contenaire_bulles{
         width: 100%;
     }
-    body
-    {
-        margin-right: 10em;
-        margin-left: 10em;
-    }
     #contenaire_bulles{
         display: flex;
         justify-content: space-around;
     }
-    .bulle_chiffre{
-        width: 4em;
-        height: 3em;
-    }
-    .bulle{
-        width:35em;
-    }
-    .restaurants_articles{
-        width: 52em;
-        margin-right: 0em;
-  }
-    .images_figures{
-        width: 46em;
-    }
-    .etiquette{
-        position: relative;
-        right:3em;
-    }
+
     .contenaire_article{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
-    #section_restaurants{
-        height: 150em;
-    }
+  
     footer{
         width:95%;
     }
@@ -640,10 +586,6 @@
         h2{
             width:100%;
         }
-        body{
-            margin-left: 20em;
-            margin-right: 20em;
-        }
         #section_fonctionnement{
             width:100%;
         }
@@ -657,34 +599,20 @@
             display: flex;
             justify-content: space-around;
         }
-        .bulle_chiffre{
-            width: 3em;
-            height: 3em;
-        }
-        .bulle{
-            width:60em;
-            height: 15em;
-        }
+
+       
         .restaurants_articles{
             width: 100%;
             margin-right: 0em;
       }
-        .images_figures{
-            width: 95%;
-        }
-        .etiquette{
-            position: relative;
-            right:5em;
-        }
+       
         .contenaire_article{
             display: grid;
             grid-template-columns: 50% 50%;
             grid-column-gap: 10px;
             
         }
-        #section_restaurants{
-            height: 150em;
-        }
+      
         .coeur_box{
             position: relative;
             top:1.5em;
