@@ -525,6 +525,31 @@ h3{
         justify-content: center;
     }
 }
+  /*Coeur avec animation*/
+  .coeur_box{
+    .coeur_plein{
+        opacity: 0;
+    }
+    &:hover{
+        .coeur{
+            opacity: 0;
+            transition: .5s 0s ease;
+        }
+        
+        .coeur_plein{
+            @include coeur;
+            font-weight: 900;
+            font-size: 2.5em;
+            display: flex;
+            justify-content: flex-end;
+            margin-top: -400px;
+            
+            opacity: 1;
+            animation: slide_coeur 0.8s;
+        }
+        
+    }
+}
 @media screen and (min-width : 1201px) and (max-width : 1600px){
     .box_menu{
         display: flex;
@@ -732,11 +757,11 @@ h3{
         font-size: 0.8em;
         position: relative;
         top:0.8em;
-    }*/
+    }
     .coeur_plein::before{
         font-size: 0.8em;
         margin-top: 0.8em;
-    }
+    }*/
     .bulles_menu:hover{
         .icon_validation{
             opacity: 1;
