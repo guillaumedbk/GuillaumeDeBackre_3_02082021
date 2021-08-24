@@ -462,16 +462,34 @@ h3{
     width: 100%;
 }
 /*media queries*/
-@media screen and (min-width : 423px) and (max-width : 1200px){
+@media screen and (min-width : 0px) and (max-width : 497px){
     .box_menu{
         display: flex;
         justify-content: center;
     }
     #le_menu{
         
-        width: 25.5em;
+        width: 100%;
     }
-    
+    .bulles_menu:hover{
+        .prix{
+            transform: translateX(-60px);
+
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            
+        }
+    }
+}
+@media screen and (min-width : 497px) and (max-width : 1200px){
+    #le_menu{ 
+        width: 28.5em;
+    }
+    .box_menu{
+        display: flex;
+        justify-content: center;
+    }
 }
 @media screen and (min-width : 1201px) and (max-width : 1600px){
     .box_menu{
@@ -696,16 +714,29 @@ h3{
     #image_menu_un{
         width: 100%;
     }
+    /*
     .coeur::before{
         font-size: 0.8em;
         position: relative;
         top:0.8em;
-    }
+    }*/
     .coeur_plein::before{
         font-size: 0.8em;
         margin-top: 0.8em;
     }
-   
+    .bulles_menu:hover{
+        .icon_validation{
+            opacity: 1;
+            font-size: 2.5em;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            transform: rotate(360deg);
+            transition: transform 500ms ease-in-out;
+        }
+    }
     }
     @media screen and (min-width : 2810px){
         header{
@@ -756,11 +787,13 @@ h3{
             justify-content: center;
          
         }
+        /*
         .coeur::before{
             font-size: 0.8em;
             position: relative;
             top:0.5em;
-        }
+        }*/
+     
         .coeur_plein::before{
             font-size: 0.8em;
             margin-top: 0.5em;
@@ -768,6 +801,18 @@ h3{
         #image_menu_un, #image_menu_deux,#image_menu_trois, #image_menu_quatre {
             width:70%;
         }
+        .bulles_menu:hover{
+            .icon_validation{
+                opacity: 1;
+                font-size: 2.5em;
+                color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                transform: rotate(360deg);
+                transition: transform 500ms ease-in-out;
+            }
+        }
         
     }
-    
