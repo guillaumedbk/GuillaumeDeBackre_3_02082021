@@ -470,14 +470,32 @@ h3{
 .footer_menus{
     width: 100%;
 }
+.les_menus{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 /*media queries*/
-@media screen and (max-width : 497px){
-    .box_menu{
+@media screen and (max-width : 353px){
+   .image_fond_menus{
+       width: 100%;
+   }
+#le_menu{
+    width:85%;
+}
+
+}
+@media screen and (min-width : 354px)and (max-width : 497px){
+    .les_menus{
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
     }
     #le_menu{
         
+        width: 100%;
+    }
+    .footer_menus{
         width: 100%;
     }
     .bulles_menu:hover{
@@ -515,8 +533,10 @@ h3{
         
     }
 }
+
 }
-@media screen and (min-width : 497px) and (max-width : 1200px){
+@media screen and (min-width : 498px) and (max-width : 1200px){
+  
     #le_menu{ 
         width: 28.5em;
     }
@@ -700,10 +720,11 @@ h3{
     height: 6em;
 }
 }
-@media screen and (min-width : 3070px){
+@media screen and (min-width : 2500px){
     .div_bulle{
         width:33.3%;
     }
+   
     
 }
 .footer_menus{
