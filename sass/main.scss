@@ -2,6 +2,7 @@
 @import "./utils/variables";
 @import "./Components/selecteurs";
 
+
     h1, h2{
         @include typo-titres(5em);
     }
@@ -723,9 +724,7 @@ h3{
 @media screen and (min-width : 2500px){
     .div_bulle{
         width:33.3%;
-    }
-   
-    
+    }  
 }
 .footer_menus{
     font-size: 1em;
@@ -762,9 +761,7 @@ h3{
         justify-content: center;
     }
   
-    footer{
-        width:95%;
-    }
+   
     .les_menus{
         display: flex;
         flex-wrap: wrap;
