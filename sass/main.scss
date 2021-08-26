@@ -244,10 +244,16 @@
         color: black;
     }
    /*SPINNER LOADING*/
+   #bloc_spinner_relative{
+       height: 100%;
+       position: relative;
+       overflow: hidden;
+   }
    .box_spinner{
     animation: background-appear 2s .2s;
     opacity: 0;
     position: absolute;
+    overflow: hidden;
     top:0em;
     height: 100%;
     width: 100%;
