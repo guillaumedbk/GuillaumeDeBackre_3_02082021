@@ -143,19 +143,28 @@
     font-size: 0.9em;
     font-weight: lighter;
     margin-top: 0em;
-    width:80%;
+    width:70%;
+
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+  
 }
+
+// .prix{
+//     @include typo-titres(1em);
+//     display: flex;
+//     justify-content: flex-end;
+//     padding-right: 1.5em;
+//     position: relative;
+//     top:1.8em;  
+// }
+
 .prix{
     @include typo-titres(1em);
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 1.5em;
-    position: relative;
-    top:1.8em;
-    
+    padding-right: 1em;
+    padding-top: 1em;
+    padding-left: 0.5em;
 }
 .prix:nth-child(3){
     margin-top:-70px;
